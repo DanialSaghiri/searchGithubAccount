@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 31, 0.726);
+}
+section {
+  min-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+.emptyInput {
+  width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: crimson;
+  margin: 10px;
+}
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 400px;
+  height: 40px;
+  margin: 20px 0;
+  text-align: center;
+}
+button {
+  margin: 10px 0;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  background-color: aqua;
+}
+.clear {
+  background-color: burlywood;
+}
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 5px gray;
+}
+.user > img {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+}
+ul,
+li {
+  list-style: none;
+}
+li > button {
+  background-color: brown;
+}
+.btnSub{
+    display: flex;
+    justify-content: center;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.526);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: 1s loader infinite linear;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
